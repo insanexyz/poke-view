@@ -22,12 +22,17 @@
   visibility: hidden;
 }
 
+.pokemon-list-card-hide {
+  display: none;
+}
+
 body {
   font-family: Arial;
   font-size: 10px;
-  background-color: var(--primary-bg-color);
   color: var(--primary-font-color);
   position: relative;
+  background: #333844;
+  font-family: "pkmn", monospace;
 }
 
 nav {
@@ -37,6 +42,7 @@ nav {
   /* border: 1px solid red; */
   font-size: 20px;
   color: var(--primary-heading-color);
+  text-shadow: 0 0.15em 0 rgba(0, 0, 0, 0.6666666667);
 }
 
 .search-wrapper {
@@ -60,16 +66,20 @@ nav {
   font-size: 14px;
   border-radius: 10px;
   /* border: 1px solid red; */
+  font-weight: bold;
 }
 
 .content-box {
   width: 700px;
   height: 700px;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   border-radius: 10px;
-  margin-top: 10vh;
+  margin-top: 50px;
   display: flex;
   padding: 5px;
+  box-shadow: 5px 6px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 5px 6px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 5px 6px 5px 0px rgba(0,0,0,0.75);
 }
 
 .card {
@@ -104,11 +114,36 @@ nav {
   background-color: #ffe9bd;
 }
 
+footer {
+  font-size: 14px;
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+  background-color: black;
+  color: white;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: red;
+}
+
+footer a:active {
+  color: #d79921;
+}
+
 @media (max-width: 768px) {
 
   #search {
     width: 90%;
-  };
+  }
 
   .content-box {
     flex-direction: column;
@@ -122,5 +157,12 @@ nav {
   .card {
     width: 95%;
     margin: 0 auto;
+  }
+
+  footer {
+    padding: 50px 10px;
+    gap: 10px;
+    font-size: 12px;
+    text-align: center;
   }
 }

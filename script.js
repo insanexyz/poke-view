@@ -1,7 +1,8 @@
 const pokeListContainer = document.querySelector(".pokemon-list-container");
 const pokeball = document.querySelector(".pokeball");
+const searchInput = document.querySelector("[data-search]");
 
-const pokemonCount = 500;
+const pokemonCount = 100;
 let pokedex = {} // {1: {"name": "pikachu", "img": url, "type": ["grass", "poison"], desc: "....."}}
 
 window.onload = async function() {
@@ -14,6 +15,18 @@ window.onload = async function() {
   pokeball.classList.add("hide");
 
   fillPokemonNames();
+
+  searchInput.addEventListener("input", (e) => {
+    const value = e.target.value;
+
+    for (let pokemon in pokedex) {
+      // const element = pokedex[pokemon];
+      // console.log(element);
+      const isVisible = pokedex[pokemon]["name"].includes(value);
+      pokedex[pokemon]["element"].classList.toggle("pokemon-list-card-hide", !isVisible);
+      // console.log(pokedex[pokemon]["element"].classList);
+    }
+  })
 }
 
 async function getPokemon(num) {
@@ -45,17 +58,18 @@ async function getPokemon(num) {
     "name": pokemonName,
     "img": pokemonImage,
     "type": pokemonType,
-    "description": pokemonDescription
+    "description": pokemonDescription,
   }
 }
 
 
 function fillPokemonNames() {
 
-  for (let i = 1; i < Object.keys(pokedex).length; i++) {
+  for (let i = 1; i <= Object.keys(pokedex).length; i++) {
     let pokemonDiv = document.createElement("div");
     pokemonDiv.innerText = `${pokedex[i]["name"]}`;
     pokemonDiv.classList.add(`pokemon-${i}`, "pokemon-name-card");
     pokeListContainer.append(pokemonDiv);
+    pokedex[i]["element"] = document.querySelector(`.pokemon-${i}`);
   }
 }

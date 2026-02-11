@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="pokeball-loading.css">
+  <link rel="stylesheet" href="bg-animation.css">
   <script defer src="script.js"></script>
 </head>
+
 <body>
 
   <nav>
@@ -16,15 +19,67 @@
 
   <div class="pokeball"></div>
 
+  <div class="animation">
+    <main id=app>
+
+      <h1>Pika chika</h1>
+
+      <div class="pokemon">
+
+        <!-- the 'pkmn' element requires a few divs to
+      be able to render the whole set of animations -->
+
+        <div class="pkmn exit left">
+          <div class="poke ball">
+            <span class="x">
+              <span class="y">
+                <span class="sprite">
+                </span>
+              </span>
+            </span>
+          </div>
+          <div class="mon"></div>
+          <div class="explode"></div>
+        </div>
+        <div class="pkmn exit right">
+          <div class="premier ball">
+            <span class="x">
+              <span class="y">
+                <span class="sprite">
+                </span>
+              </span>
+            </span>
+          </div>
+          <div class="mon"></div>
+          <div class="explode"></div>
+        </div>
+
+      </div>
+
+      <section class="balls">
+        <!-- the 'ball' element can perform all the animations
+      using a single div with psuedo-elements. -->
+
+        <div class="poke ball"></div>
+        <div class="poke ball side"></div>
+        <div class="poke ball open"></div>
+        <div class="poke ball roll"></div>
+        <div class="poke ball rock"></div>
+        <div class="poke ball bounce"></div>
+      </section>
+
+    </main>
+  </div>
+
   <div class="search-wrapper">
-    <input type="search" id="search">
+    <input type="search" id="search" data-search>
   </div>
 
   <div class="container">
     <div class="content-box">
 
       <!-- left side - display pokemon info -->
-       <div class="pokemon-info card">
+      <div class="pokemon-info card">
         <img src="" alt="" class="pokemon-img">
         <div class="pokemon-types">
           <span class="type-box grass">GRASS</span>
@@ -32,13 +87,27 @@
         </div>
         <div class="pokemon-description">
         </div>
-       </div>
+      </div>
 
-       <!-- right side - display pokemon lists -->
-        <div class="pokemon-list-container card">
-        </div>
+      <!-- right side - display pokemon lists -->
+      <div class="pokemon-list-container card">
+      </div>
 
     </div>
   </div>
+
+  <footer>
+    <div>
+      Made by Insane <3 </div>
+
+        <div>
+          <a href="">My Discord Server (not yet ready)</a>
+        </div>
+
+        <div>
+          Discord username - xxx___insane___xxx
+        </div>
+  </footer>
 </body>
+
 </html>
