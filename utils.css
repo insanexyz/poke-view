@@ -1,0 +1,71 @@
+.type-normal {
+    color: white;
+}
+
+.type-fire {
+    color: orange;
+}
+
+.type-grass {
+    color: green;
+}
+
+.type-water {
+    color: blue;
+}
+
+.type-ice {
+    color: lightblue;
+}
+
+.type-electric {
+    color: gold;
+}
+
+.type-fighting {
+    color: darkred;
+}
+
+.type-flying {
+    color: skyblue;
+}
+
+.type-bug {
+    color: yellowgreen;
+}
+
+.type-ghost {
+    color: purple;
+}
+
+.type-rock {
+    color: grey;
+}
+
+.type-ground {
+    color: burlywood;
+}
+
+.type-steel {
+    color: silver;
+}
+
+.type-dark {
+    color: white;
+}
+
+.type-psychic {
+    color: palevioletred;
+}
+
+.type-fairy {
+    color: pink;
+}
+
+.type-dragon {
+    color: teal;
+}
+
+.type-poison {
+    color: darkviolet;
+}

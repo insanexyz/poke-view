@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="pokeball-loading.css">
   <link rel="stylesheet" href="bg-animation.css">
+  <link rel="stylesheet" href="utils.css">
   <script defer src="script.js"></script>
 </head>
 
@@ -19,10 +20,11 @@
 
   <div class="pokeball"></div>
 
+
   <div class="animation">
     <main id=app>
 
-      <h1>Pika chika</h1>
+      <h1>Together you and your Pokemon overcame all the challenges you faced, however difficult</h1>
 
       <div class="pokemon">
 
@@ -71,6 +73,7 @@
     </main>
   </div>
 
+
   <div class="search-wrapper">
     <input type="search" id="search" data-search>
   </div>
@@ -79,18 +82,18 @@
     <div class="content-box">
 
       <!-- left side - display pokemon info -->
-      <div class="pokemon-info card">
-        <img src="" alt="" class="pokemon-img">
-        <div class="pokemon-types">
-          <span class="type-box grass">GRASS</span>
-          <span class="type-box poison">POISON</span>
+      <div class="pokemon-info-container card left">
+        <img src="" alt="" class="pokemon-img-container">
+        <div class="pokemon-types-container">
+          <!-- <span class="type-box grass"></span>
+          <span class="type-box poison"></span> -->
         </div>
-        <div class="pokemon-description">
+        <div class="pokemon-description-container">
         </div>
       </div>
 
       <!-- right side - display pokemon lists -->
-      <div class="pokemon-list-container card">
+      <div class="pokemon-list-container card right">
       </div>
 
     </div>
