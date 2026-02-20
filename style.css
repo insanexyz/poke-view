@@ -111,12 +111,13 @@ nav {
 }
 
 .pokemon-description-container {
-  font-size: 16px;
+  font-size: 18px;
   width: max-content;
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 60px;
   padding: 10px;
   word-wrap: break-word;
+  max-width: 80%;
 }
 
 
