@@ -277,8 +277,8 @@
 }
 /* pokemon throw/exit animation code */
 :root {
-  --poke1: url("https://img.pokemondb.net/sprites/black-white/anim/normal/eevee.gif");
-  --poke2: url("https://img.pokemondb.net/sprites/black-white/anim/normal/pikachu.gif");
+  --poke1: url("/images/eevee.gif");
+  --poke2: url("/images/pikachu.gif");
 }
 
 .pkmn {
@@ -558,7 +558,7 @@
 
 .explode:before {
   content: "";
-  background-image: url("https://assets.codepen.io/13471/jimena-cuenca-changeworld-sprite.jpg");
+  background-image: url("/images/jimena-cuenca-changeworld-sprite.jpg");
   position: absolute;
   left: 0;
   top: 0;
@@ -773,7 +773,7 @@ label {
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("https://assets.codepen.io/13471/Pokemon-DPPt.woff2") format("woff2"), url("https://assets.codepen.io/13471/pokemon-DPPt.woff") format("woff");
+  src: url("/fonts/Pokemon-DPPt.woff2") format("woff2"), url("/fonts/Pokemon-DPPt.woff2") format("woff");
 }
 
 /* @media (max-width) {

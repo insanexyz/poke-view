@@ -11,10 +11,8 @@ let pokedex = {}
 
 window.onload = async function() {
 
-  const res = await fetch("./pokedex.json");
+  const res = await fetch("/scripts/pokedex.json");
   pokedex = await res.json(); 
-
-  console.log(pokedex);
 
   fillPokemonNames();
 
